@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const request = axios.create({
-  baseURL: 'https://nlwrankingserver-production.up.railway.app/',
+  baseURL: process.env.API_URL,
 });
 
 export const requestSkylab = axios.create();
