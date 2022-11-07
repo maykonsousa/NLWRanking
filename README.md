@@ -15,6 +15,7 @@
 > Como nesta edição do NLW a Rocketseat lançou uma premiação para os alunos que mais indicarem outros alunos para fazer o treinamento, desenvolvi essa aplicação para que pudéssemos monitorar o nosso desempenho em relaçao a outros alunos cadastrados
 
 ## TODO - Ajustes e Melhorias
+### TODO - Ajustes e Melhorias
 
 Alguns bugs durante a semana levantaram a necessidade de algumas melhorias
 
@@ -41,6 +42,7 @@ Para instalar o Servidor, siga estas etapas:
 1 Acesse a pasta SERVER no projeto no terminal e rode o comando:
 
 ```typescript
+```
 npm install
 ```
 
@@ -64,6 +66,21 @@ inicie o servidor na porta `3333` utilizando o comando
 npm run dev
 ```
 
+```
+DATABASE_URL="aqui vai a url do seu banco de dados"
+```
+O prisma orm está configurado para um banco de dados postgress, caso queira usar outro banco de dados como MySQL ou SQLite faça as alterações necessárias de acordo com a documentação do `Prisma`
+
+inicie o banco de dados com o comando
+```
+npx prisma migrate dev
+```
+
+inicie o servidor na porta `3333` utilizando o comando 
+
+```
+npm run dev
+```
 ## 🚀 Instalando o Front-End
 
 Para instalar o Front-|End, siga estas etapas:
@@ -71,6 +88,7 @@ Para instalar o Front-|End, siga estas etapas:
 1 Acesse a pasta WEB no projeto no terminal e rode o comando:
 
 ```typescript
+```
 npm install
 ```
 
@@ -88,10 +106,21 @@ inicie o servidor na porta `3000` utilizando o comando
 npm run dev
 ```
 
+```
+API_URL="http://localhost:3333"
+```
+Para funcionar é necessário que o servidor já esteja rodando na porta `3333`
+
+inicie o servidor na porta `3000` utilizando o comando 
+
+```
+npm run dev
+```
 ## ☕ Usando NLW Ranking
 
 Para usar o NLW Raking garanta que as duas aplicações estejam rodando em suas respectivas portas e acesse a url `http://localhost:3000`
 
 Importante: Para cadastrar um usuário é necessário que a API da Rocketseat `https://skylab-api.rocketseat.com.br/public/event/nlw-copa/referral/:userId` ainda esteja funcionando e o userId passado seja um usuário válido. por exemplo, no meu caso o usuário é `maykon-216`
+
 
 [⬆ Voltar ao topo](#nome-do-projeto)<br>
