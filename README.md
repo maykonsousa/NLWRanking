@@ -42,7 +42,6 @@ Para instalar o Servidor, siga estas etapas:
 1 Acesse a pasta SERVER no projeto no terminal e rode o comando:
 
 ```typescript
-```
 npm install
 ```
 
@@ -88,7 +87,6 @@ Para instalar o Front-|End, siga estas etapas:
 1 Acesse a pasta WEB no projeto no terminal e rode o comando:
 
 ```typescript
-```
 npm install
 ```
 
@@ -106,16 +104,9 @@ inicie o servidor na porta `3000` utilizando o comando
 npm run dev
 ```
 
-```
-API_URL="http://localhost:3333"
-```
 Para funcionar é necessário que o servidor já esteja rodando na porta `3333`
 
-inicie o servidor na porta `3000` utilizando o comando 
 
-```
-npm run dev
-```
 ## ☕ Usando NLW Ranking
 
 Para usar o NLW Raking garanta que as duas aplicações estejam rodando em suas respectivas portas e acesse a url `http://localhost:3000`
